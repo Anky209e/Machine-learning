@@ -1,2 +1,5 @@
-CNN_cifar/cifar10.tgz
+*.tgz
 *.png
+*.json
+*.zip
+*.jpg
