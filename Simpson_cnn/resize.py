@@ -1,6 +1,6 @@
 import os
 from PIL import Image
-folder1 = r"C:\Users\AnKy\Downloads\archive\simpsons_dataset\cbart_simpson"
+folder1 = r"C:\Users\AnKy\Downloads\Validation\male"
 
 files = os.listdir(folder1)
 
@@ -13,6 +13,6 @@ for x in files:
     print("Resizing...")
     r_img = img.resize(size)
     print("Saving..")
-    r_img.save(r"C:\Programming\Machine-learning\Simpson_cnn\train_set\cbart\{}.jpg".format(a))
+    r_img.save(r"C:\Users\AnKy\Downloads\gender_disc\test\male\{}.jpg".format(a))
     
 
