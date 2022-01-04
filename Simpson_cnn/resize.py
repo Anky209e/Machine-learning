@@ -1,17 +1,17 @@
 import os
 from PIL import Image
-from tqdm.notebook import tqdm
-folder1 = r"C:\Users\AnKy\Downloads\flower_data\flowers_imitation"
+
+folder1 = r"/home/anky/Downloads/art_data"
 
 files = os.listdir(folder1)
 
-size = (256,256)
+size = (64,64)
 a = 0
 
-for x in tqdm(files):
+for x in files:
     a +=1
-    img = Image.open("{}\{}".format(folder1,x))
+    img = Image.open("{}/{}".format(folder1,x))
     print("Resizing...")
     r_img = img.resize(size)
     print("Saving..")
-    r_img.save(r"C:\Users\AnKy\Downloads\flower_pattern\flowers\{}.jpg".format(a))
+    r_img.save(r"/home/anky/Documents/GitHub/Machine-learning/abstract_art_gans/abs_art_data/data/{}.jpg".format(a))
