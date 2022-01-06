@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-folder1 = r"/home/anky/Downloads/art_data"
+folder1 = r"/home/anky/Documents/GitHub/Machine-learning/simpsons_gans/simpsons_gans_data/cropped"
 
 files = os.listdir(folder1)
 
@@ -14,4 +14,4 @@ for x in files:
     print("Resizing...")
     r_img = img.resize(size)
     print("Saving..")
-    r_img.save(r"/home/anky/Documents/GitHub/Machine-learning/abstract_art_gans/abs_art_data/data/{}.jpg".format(a))
+    r_img.save(r"/home/anky/Documents/GitHub/Machine-learning/simpsons_gans/simp_gans_data/images/{}.jpg".format(a))
