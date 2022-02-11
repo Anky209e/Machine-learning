@@ -1,17 +1,17 @@
 import os
 from PIL import Image
 
-folder1 = r"/home/anky/Downloads/flower/all"
+folder1 = r"/home/anky/Downloads/cars_data/cars_test/cars_test"
 
 files = os.listdir(folder1)
 
-size = (64,64)
-a = 0
+size = (256,256)
+a = 8145
 
 for x in files:
     a +=1
     img = Image.open("{}/{}".format(folder1,x))
-    print("Resizing...")
+    print("Resizing:",a)
     r_img = img.resize(size)
-    print("Saving..")
-    r_img.save(r"/home/anky/Documents/GitHub/Machine-learning/flower_pattern_gans/flower_data/images/{}.jpg".format(a))
+    print("Saving:",a)
+    r_img.save(r"/home/anky/Documents/GitHub/Machine-learning/cars_gan/cars_data/images/{}.jpg".format(a))
