@@ -1,12 +1,12 @@
 import os
 from PIL import Image
 
-folder1 = r"/home/anky/Downloads/cars_data/cars_test/cars_test"
+folder1 = r"/home/sacreds/Downloads/lenses/train/sub"
 
 files = os.listdir(folder1)
 
-size = (256,256)
-a = 8145
+size = (64,64)
+a = 0
 
 for x in files:
     a +=1
@@ -14,4 +14,4 @@ for x in files:
     print("Resizing:",a)
     r_img = img.resize(size)
     print("Saving:",a)
-    r_img.save(r"/home/anky/Documents/GitHub/Machine-learning/cars_gan/cars_data/images/{}.jpg".format(a))
+    r_img.save(r"/home/sacreds/Documents/GitHub/ML4SC_GSOC/Exploring Transformers/lenses/train/sub/{}.jpg".format(a))
