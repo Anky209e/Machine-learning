@@ -7,3 +7,5 @@
 *.avi
 *.mp4
 *.JPG
+/variational_auto_encoder/__pycache__
+/variational_auto_encoder/data/MNIST/raw
