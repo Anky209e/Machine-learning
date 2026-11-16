@@ -27,7 +27,8 @@ def train(EPOCHS,model,train_loader,optimizer,device):
         
         avg_loss = total_loss / len(train_dataset)
         print(f"EPOCH:{epoch+1} LOSS:{avg_loss:.4f}")
-
+#TODO: Add a random Sampler function for new images
+#TODO: Implement Weight saving
 if __name__ == "__main__":
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
